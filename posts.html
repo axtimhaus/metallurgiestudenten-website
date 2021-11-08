@@ -1,0 +1,14 @@
+---
+title: Neuigkeiten
+banner_text: Alles was es an Neuem aus dem Vereinsleben gibt!
+---
+
+
+{% for post in site.posts %}
+<div class="{% cycle 'bg-light', '' %} p-3">
+    <a href="{{ post.url }}" class="lin">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.excerpt }}</p>
+    </a>
+</div>
+{% endfor %}
